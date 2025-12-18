@@ -1,13 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
+import Location from "@/components/Location";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Say Cheez Burger | 100% Wagyu Halal Smash Burgers in Irvine, CA</title>
+        <meta 
+          name="description" 
+          content="Say Cheez Burger - Premium 100% Wagyu halal smash burgers in Irvine, CA. Pop-up experience featuring our famous Double Smile burgers. 4.8 stars on Yelp!" 
+        />
+        <meta name="keywords" content="smash burger, wagyu burger, halal burger, Irvine, California, food popup, Say Cheez" />
+        <link rel="canonical" href="https://saycheezburgers.com" />
+      </Helmet>
+      
+      <main className="min-h-screen bg-background">
+        <Hero />
+        <Menu />
+        <Location />
+        <Footer />
+      </main>
+    </>
   );
 };
 
