@@ -4,7 +4,6 @@ import { Menu, X, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { name: "Home", path: "/" },
   { name: "Menu", path: "/menu" },
   { name: "About", path: "/about" },
   { name: "Events", path: "/events" },
